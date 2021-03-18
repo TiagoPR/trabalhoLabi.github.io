@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3G</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <! media  >
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script type="text/javascript" src="mapa.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" height="42" width="42"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	   <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	    <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link" href="index.html">Internet Móvel</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="about.html">Acerca</a>
+		</li>
+		<li class="nav-item active">
+		<a class="nav-link" href="historia.html">História</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="quotidiano.html">Quotidiano</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="ideias.html">Ideias erradas</a>
+		</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	   <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	    <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link" href="historia.html">1G</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="2g.html">2G</a>
+		</li>
+		<li class="nav-item active">
+		<a class="nav-link" href="3g.html">3G</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="4g.html">4G</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="5g.html">5G</a>
+		</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+   <div class="col-12">
+     <h1 style="color:blue;" class="display-4"> 3G </h1>
+	 <a class="navbar-brand" href="#"><img src="imagens/3gtelemovel.png" height="100" width="100"></a>
+   </div>
+   <hr>
+   <div class="col-12">
+      <p class="lead">As tecnologias 3G permitem às operadoras da rede oferecerem a seus usuários uma ampla gama dos mais avançados serviços, já que possuem uma capacidade de rede maior por causa de uma melhora na efciência espectral. Entre os serviços, há a telefonia por voz e a transmissão de dados a longas distâncias, tudo em um ambiente móvel. Normalmente, são fornecidos serviços com taxas de 5 a 10 megabits por segundo. Na Europa, os serviços 3G foram introduzidos a partir de Março de 2003, começando pelo Reino Unido e Itália. O Conselho da União Europeia sugeriu às operadoras 3G cobrirem 80% das populações nacionais europeias até ao final de 2005. Críticas. Como é normal, o conceito de evolução remete para a melhoria de algo, mas com o aparecimento também deu origem a descontentamentos e criticas como: -Grande quantidade de dívida atualmente sustentada por muitas empresas telecomunicações, o que a torna um desafio para construir a infraestrutura necessária para 3G. -Falta de apoio dos Estados-membros para conturbado financeiramente operadores. -Expensasdostelemóveis3G.(Telemóveiscompreçosmuitoacimadonormal, dificultando ao consumidor usufruir da nova tecnologia) -Falta de condições financeiras mínimas dos usuários de aparelhos móveis 2G para os novos serviços 3G sem fios. -A falta de cobertura, porque era um novo serviço. -Alta dos preços dos serviços móveis 3G em alguns países, incluindo o acesso à Internet.
+</p>
+</div>
+</div>
+
+</body>
+
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+    <div class="col">
+	<a href="https://www.ua.pt/" target="_blank" ><img src="labi.png" height="42" width="130"> </a>
+	<hr class="light">
+	<h5> Campus Universitário de Santiago
+3810-193 Aveiro
+Portugal </h5>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#emoji" onclick="desenhamapa()">
+Mapa da Universidade
+</button>
+ <div id="emoji" class="collapse">
+ <div class ="container-fluid padding">
+ <div class="row text-center">
+ <div class="mapa">
+    <div id="oMeuMapa" style="width: 600px; height: 400px"></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+</div>
+</div>	
+</footer>
+
+</html>

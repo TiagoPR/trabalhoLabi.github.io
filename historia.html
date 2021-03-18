@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>1G</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <! media  >
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script type="text/javascript" src="mapa.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" height="42" width="42"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	   <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	    <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link" href="index.html">Internet Móvel</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="about.html">Acerca</a>
+		</li>
+		<li class="nav-item active">
+		<a class="nav-link" href="historia.html">História</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="quotidiano.html">Quotidiano</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="ideias.html">Ideias erradas</a>
+		</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	   <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	    <ul class="navbar-nav ml-auto">
+		<li class="nav-item active">
+		<a class="nav-link" href="historia.html">1G</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="2g.html">2G</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="3g.html">3G</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="4g.html">4G</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="5g.html">5G</a>
+		</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+   <div class="col-12">
+     <h1 style="color:blue;" class="display-4"> 1G </h1>
+	 <a class="navbar-brand" href="#"><img src="imagens/1gtelemovel.png" height="100" width="100"></a>
+   </div>
+   <hr>
+   <div class="col-12">
+   <p class="lead">1G refere-se á primeira tecnologia celular sem o, que eram as chamadas por voz. Estas foram as telecomunicações analógicas que foram introduzidas em 1980 e que mais á frente foram substituídas pelas redes 2G que mais à frente iremos falar. A primeira rede celular automatizada comercializada foi no Japão, pela Nippon Telegraph and Telephone (NTT) ,inicialmente na zona metropolitana de Tokyo. Em 5 anos, a NTT expandiu-se até cobrir a população inteira do Japão, sendo assim a primeira rede 1G nacional. Este tipo de sistemas tinham grandes limitações, por se tratar de sistemas analógicos mas mal foram utilizados para tráfego de dados, apesar de permitir velocidades semelhantes à conexão discada. O sistema mais utilizado nesta época era o AMPS (Advanced Mobile Phone System), que aos poucos deu lugar ao sinal digital, ou 2G. Os sistemas celulares de primeira geração tinham uma qualidade de som fraca e a velocidade de transferência rondava os 9.6 Kbps. Neste momento,um serviço NMT da Rússia é a única a usar 1G. Para ter uma ideia, a 1G foi desenvolvida para os primeiros telemóveis que atualmente são vistos como objetos completamente antiquados devido ás suas enormes dimensões e pouco portabilidade que será melhorada signicativamente nas gerações seguintes.</p>
+</div>
+</div>
+
+</body>
+
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+    <div class="col">
+	<a href="https://www.ua.pt/" target="_blank" ><img src="labi.png" height="42" width="130"> </a>
+	<hr class="light">
+	<h5> Campus Universitário de Santiago
+3810-193 Aveiro
+Portugal </h5>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#emoji" onclick="desenhamapa()">
+Mapa da Universidade
+</button>
+ <div id="emoji" class="collapse">
+ <div class ="container-fluid padding">
+ <div class="row text-center">
+ <div class="mapa">
+    <div id="oMeuMapa" style="width: 600px; height: 400px"></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+</div>
+</div>	
+</footer>
+
+</html>

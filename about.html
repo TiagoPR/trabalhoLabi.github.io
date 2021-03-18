@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <! media  >
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script type="text/javascript" src="mapa.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+  <title>Acerca deste projeto</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" height="42" width="42"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	   <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	    <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link" href="index.html">Internet Móvel</a>
+		</li>
+		<li class="nav-item active">
+		<a class="nav-link" href="about.html">Acerca</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="historia.html">História</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="quotidiano.html">Quotidiano</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="ideias.html">Ideias erradas</a>
+		</li>
+		</ul>
+	</div>
+</div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Autores:</h1> 
+      <p>Tiago Rodrigues Nºmec 97781 e Henrique Policarpo Nºmec 98355</p>
+      <h1>Data: </h1>
+      <p>17 de janeiro de 2020</p>
+    </div>
+    <div class="col">
+      <h1>Disciplina :</h1>
+      <p>Laboratórios de informática</p>
+      <h1>Universidade : </h1>
+      <img src="labi.png" height="60" width="180">
+    </div>
+	<div class="col">
+     <h3> Recursos externos utilizados:</h3>
+ <div style="float:center; max-width: 70%; margin: .5rem; padding:0; border: .5rem solid #666;">
+ 	<a href="https://w3newbie.com/courses/" target="_blank" style="z-index: 100; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/w3newbie-courses-zip.png" style="max-width: 100%; min-width: 100%;"></a>
+</div>
+<div class="codeua">
+ <a href="https://code.ua.pt/projects/labi2019-t3g4" target="_blank" class="btn btn-info">CodeUA</a>
+ </div>
+    </div>
+  </div>
+</div>
+<br>
+<center>
+<div class="cont">
+<h3>Contribuições</h3>
+<p>Henrique Policarpo contribuiu para o trabalho com modificações, desenvolveu os temas sobre o 1G, 2G, 3G 4G e 5G adicionou a temática de ideias erradas(Tenho 5G em casa?)(5G provoca o cancro?) e melhorias estéticas.</p>
+<p>Tiago Rodrigues esteve a trabalhar principalmente com o index (Internet Móvel) e o quotidiano , 
+ainda escrevendo código em CSS e JavaScript, criação de hiperligações com as imagens do site 
+(ex: logotipo no canto superior esquerdo e o logotipo da universidade).
+<p>Resumindo, a nosso ver o trabalho dividido em percentagem de cada autor neste projeto foi de 50% por cada membro do grupo.</p>
+</center>
+</body>
+</div>
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+    <div class="col">
+	<a href="https://www.ua.pt/" target="_blank" ><img src="labi.png" height="42" width="130"> </a>
+	<hr class="light">
+	<h5> Campus Universitário de Santiago
+3810-193 Aveiro
+Portugal </h5>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#emoji" onclick="desenhamapa()">
+Mapa da Universidade
+</button>
+ <div id="emoji" class="collapse">
+ <div class ="container-fluid padding">
+ <div class="row text-center">
+ <div class="mapa">
+    <div id="oMeuMapa" style="width: 600px; height: 400px"></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+</div>
+</div>	
+</footer>
+
+</html>

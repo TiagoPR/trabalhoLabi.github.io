@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ideias Erradas</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <! media  >
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script type="text/javascript" src="mapa.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" height="42" width="42"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	   <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	    <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		<a class="nav-link" href="index.html">Internet Móvel</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="about.html">Acerca</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="historia.html">História</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="quotidiano.html">Quotidiano</a>
+		</li>
+		<li class="nav-item active">
+		<a class="nav-link" href="ideias.html">Ideias erradas</a>
+		</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+   <div class="col-12">
+     <h1 style="color:blue;" class="display-4"> Ideias Erradas </h1>
+   </div>
+   <hr>
+   <div class="col-12">
+</div>
+</div>
+<div class="ideia">
+<center><b><p style="font-size:25px;background-color:lightgray;">Tenho 5G em casa?</b></center> Neste momento , muitas pessoas que estejam a optar por uma Internet mais rápida em casa devem ter a Wi-Fi 5G que à primeira vista pode confundir muito os consumidores ao pensar que é a geração 5G, mas esse não é o caso. Simplesmente é um marketing e promoção de marca confuso, pois o seu roteador de casa não tem a rede celular 5G mas sim 5Ghz. A Wi-Fi de 5Ghz é uma Wi-Fi de baixo alcance porém tem maiores velocidades do que a Wi-Fi do comum de 2.4Ghz. Por isso as pessoas que tem uma Wi-Fi 5G não se refere à rede celular mas sim à sua faixa de frequência. De modo a retirar algumas duvidas, o 5G ou 5Ghz que encontramos em casa não passa da indicação de uma frequência a que as ondas de Internet wireless é transmitida, assim como o 2,4Ghz. No caso dos 5Ghz, normalmente recomenda-se a utilização desta frequência para dispositivos que precisem de uma maior quantidade de transferência de dados(computadores, smartphones ou consolas), uma vez que tem a capacidade de transmitir maiores quantidades de informação no mesmo espaço de tempo que a frequência de 2.4Ghz consegue, mas assim como o 5G móvel, um roteador de 5Ghz também tem a desvantagem de ser interrompido por barreiras físicas mais facilmente do que os seus parceiros de 2.4Ghz. Atualmente, os roteadores mais recentes já vem equipados com a capacidade de transmitir informação em ambas as frequências, juntando assim o útil ao agradável, permitindo uma maior diversidade de utilização.</p>
+
+<center><b><p style="font-size:25px;background-color:lightgray;">5G provoca o cancro?</p></b></center>A tecnologia 5G está a dar os seus primeiros passos nos EUA e à volta do mundo , mas uma coisa é certa, ela não causa cancro... Ou será que provoca? Diversos estudos revelam informações contraditórias, deste estudos que afirmam não ser minimamente impactantes na vida do ser humano, a estudo que afirmam ter efeito na pele e desenvolvimento de genes nas células, a outros artigos mais extremos de aves que caem dos céus(supostamente afetadas por este novo tipo  de radiações). Após várias investigações sobre os possíveis impactos na saúde que o 5G podia provocar, não foi possível obter conclusões assertivas, devido a grande diversidade de artigos existentes. Tendo uma perspetiva diferente, é possível afirmar que a radiação ionizante mata, enquanto que a não ionizante não mata. E as frequências que a rede 5G liberta são da parte não ionizante, logo não mata. Porém é algo que se deve continuar a pesquisar e investigar para ter todas as certezas.
+</div>
+
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+    <div class="col">
+	<a href="https://www.ua.pt/" target="_blank" ><img src="labi.png" height="42" width="130"> </a>
+	<hr class="light">
+	<h5> Campus Universitário de Santiago
+3810-193 Aveiro
+Portugal </h5>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#emoji" onclick="desenhamapa()">
+Mapa da Universidade
+</button>
+ <div id="emoji" class="collapse">
+ <div class ="container-fluid padding">
+ <div class="row text-center">
+ <div class="mapa">
+    <div id="oMeuMapa" style="width: 600px; height: 400px"></div>
+	</div>
+</div>
+</div>
+</div>
+	</div>
+</div>
+</div>	
+</footer>
+
+</body>
+
+</html>
